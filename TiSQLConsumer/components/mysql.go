@@ -2,7 +2,7 @@ package components
 
 import (
 	"sync"
-
+        "fmt"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
@@ -22,13 +22,13 @@ func InitDB() {
 		var err error
 		DBReader, err = gorm.Open("mysql", Config.DB.MysqlServerRead)
 		if err != nil {
-			Logger.Fatalf("Init DB error : %v", err)
+			fmt.Printf("Init DB error : %v", err)
 			return
 		}
 		DBReader.LogMode(Config.DB.LogFlag)
 		DBWriter, err = gorm.Open("mysql", Config.DB.MysqlServerWrite)
 		if err != nil {
-			Logger.Fatalf("Init DB error : %v", err)
+			fmt.Printf("Init DB error : %v", err)
 			return
 		}
 		DBReader.LogMode(Config.DB.LogFlag)

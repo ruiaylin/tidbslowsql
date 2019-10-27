@@ -1,0 +1,11 @@
+{
+    "go.lintOnSave": "off",
+    "go.buildOnSave": "off",
+    "go.vetOnSave": "off",
+    "php.validate.run": "onType",
+    "mssql.saveAsCsv.includeHeaders": false,
+    "python.linting.lintOnSave": false,
+    "python.testing.autoTestDiscoverOnSaveEnabled": false,
+    "python.workspaceSymbols.rebuildOnFileSave": false,
+    "go.lintTool": "golangci-lint"
+}

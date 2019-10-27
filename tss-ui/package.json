@@ -1,0 +1,54 @@
+{
+  "name": "tss-ui",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Yue Yang <g1enyy0ung@gmail.com> (https://g1eny0ung.site)",
+  "license": "MIT",
+  "dependencies": {
+    "animejs": "^3.1.0",
+    "axios": "^0.19.0",
+    "d3": "^5.12.0",
+    "daterangepicker": "^3.0.5",
+    "jquery": "^3.4.1",
+    "moment": "^2.24.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-redux": "^7.1.1",
+    "react-scripts": "3.2.0",
+    "react-tooltip": "^3.11.1",
+    "reason-react": "^0.7.0",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "cross-env BROWSER=none react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "re:build": "bsb -make-world",
+    "re:watch": "bsb -make-world -w",
+    "re:clean": "bsb -clean-world"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "bs-platform": "^5.2.1",
+    "bulma": "^0.8.0",
+    "cross-env": "^6.0.3",
+    "node-sass": "^4.12.0",
+    "redux-logger": "^3.0.6"
+  }
+}

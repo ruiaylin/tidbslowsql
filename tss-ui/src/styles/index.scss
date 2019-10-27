@@ -1,0 +1,48 @@
+@import '../../node_modules/bulma/bulma.sass';
+@import 'common';
+
+@import url('https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css');
+
+.daterangepicker {
+  td.active {
+    background: $turquoise;
+
+    &:hover {
+      background: $turquoise;
+    }
+  }
+
+  .drp-buttons {
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: center;
+
+    .drp-selected {
+      @extend .title;
+      @extend .is-6;
+
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+html,
+body {
+  background: $MainBackgroundColor;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@import 'App';
+@import 'Navbar';
+@import 'Loading';
+@import 'Container';
+@import 'TssInputGroup';
+@import 'AreaChart';
+@import 'Tooltip';
+@import 'Table';
+@import 'Realtime';
+@import 'Report';
+@import 'Details';

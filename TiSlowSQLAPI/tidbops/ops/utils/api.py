@@ -12,7 +12,7 @@ RS404 = {'code': 404, 'msg': 'No result matched.'}
 RS500 = {'code': 500, 'msg': 'Internal error.'}
 RS520 = {'code': 520, 'msg': 'Internal exception msg'}
 RSYES = {'code': 1, 'msg': 'Successful.'}
-RSNO = {'code': 0, 'msg': 'Fail'}
+RSNO  = {'code': 0, 'msg': 'Fail'}
 
 
 def fullResponse(statu_dic, data):

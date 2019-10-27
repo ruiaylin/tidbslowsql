@@ -31,9 +31,9 @@ class DevelopmentConfig(Config):
     DEBUG = True
     SQLALCHEMY_ECHO = True
     SQLALCHEMY_DATABASE_URI = \
-        'mysql+pymysql://tidbhachathon:tidbhachathon2019@10.9.25.129/tidbops?charset=utf8mb4'
+        'mysql+pymysql://tidbhachathon:tidbhachathon2019@hostname/tidbops?charset=utf8mb4'
     SQLALCHEMY_BINDS = {
-        'tidbops': 'mysql+pymysql://tidbhachathon:tidbhachathon2019@10.9.25.129/tidbops?charset=utf8mb4'
+        'tidbops': 'mysql+pymysql://tidbhachathon:tidbhachathon2019@hostname/tidbops?charset=utf8mb4'
     }
 
 
@@ -48,9 +48,9 @@ class TestingConfig(Config):
     # SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URL') or \
     #   'sqlite:///' + os.path.join(basedir, 'data-dev.sqlite')
     SQLALCHEMY_DATABASE_URI = \
-        'mysql+pymysql://tidbhachathon:tidbhachathon2019@10.9.25.129/tidbops?charset=utf8mb4'
+        'mysql+pymysql://tidbhachathon:tidbhachathon2019@hostname/tidbops?charset=utf8mb4'
     SQLALCHEMY_BINDS = {
-        'tidbops': 'mysql+pymysql://tidbhachathon:tidbhachathon2019@10.9.25.129/tidbops?charset=utf8mb4'
+        'tidbops': 'mysql+pymysql://tidbhachathon:tidbhachathon2019@hostname/tidbops?charset=utf8mb4'
     }
 
 class ProductionConfig(Config):
@@ -59,15 +59,15 @@ class ProductionConfig(Config):
     SQLALCHEMY_RECORD_QUERIES = False
     SQLALCHEMY_ECHO = False
     SQLALCHEMY_DATABASE_URI = \
-        'mysql+pymysql://tidbhachathon:tidbhachathon2019@10.9.25.129/tidbops?charset=utf8mb4'
+        'mysql+pymysql://tidbhachathon:xxxxxxx@hostname/tidbops?charset=utf8mb4'
     SQLALCHEMY_BINDS = {
-        'tidbops': 'mysql+pymysql://tidbhachathon:tidbhachathon2019@10.9.25.129/tidbops?charset=utf8mb4'
+        'tidbops': 'mysql+pymysql://tidbhachathon:xxxxxxx@hostname/tidbops?charset=utf8mb4'
     }
 
     @classmethod
     def init_app(cls, app):
         Config.init_app(app)
-        
+
 
 config = {
     'development': DevelopmentConfig,

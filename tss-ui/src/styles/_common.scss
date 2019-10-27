@@ -1,0 +1,37 @@
+$navbar-item-img-max-height: 2.5rem;
+$navbar-item-hover-color: $turquoise;
+
+@import '../../node_modules/bulma/sass/components/navbar';
+
+$input-hover-border-color: $turquoise;
+$input-focus-border-color: $turquoise;
+$input-focus-box-shadow-color: rgba($turquoise, 0.25);
+
+@import '../../node_modules/bulma/sass/form/_all';
+
+$MainBackgroundColor: #eaeaea;
+$TooltipBackgroundColor: #222;
+$TooltipFontColor: #fff;
+
+@mixin VHCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin panel-shadow {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tss-panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0;
+  background: #fff;
+  border-top: 3px solid $turquoise;
+
+  .title {
+    margin-bottom: 1rem;
+  }
+}

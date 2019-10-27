@@ -1,0 +1,33 @@
+.tss-TssInputGroup {
+  background: #fff;
+
+  .panel-block {
+    display: flex;
+    justify-content: center;
+
+    > .field {
+      display: flex;
+      align-items: center;
+
+      .field:not(:last-child) {
+        margin-bottom: 0;
+      }
+
+      input {
+        border-width: 2px;
+      }
+    }
+
+    .field-label {
+      margin: 0 1.5rem;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    .field.field-submit-button {
+      margin-left: 2rem;
+    }
+  }
+}

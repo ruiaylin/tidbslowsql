@@ -1,0 +1,12 @@
+.tss-Tooltip {
+  max-width: 300px;
+  background-color: $TooltipBackgroundColor !important;
+  color: $TooltipFontColor !important;
+  font-size: 0.8rem;
+
+  &.place-top {
+    &:after {
+      border-top-color: $TooltipBackgroundColor !important;
+    }
+  }
+}

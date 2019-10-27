@@ -1,0 +1,42 @@
+.tss-AreaChart {
+  position: relative;
+  width: 100%;
+  background: #fff;
+
+  > svg {
+    path.domain {
+      stroke: grey;
+      stroke-width: 2;
+    }
+
+    g.tick text {
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+
+    .focus circle {
+      fill: $turquoise;
+    }
+  }
+}
+
+#area-chart-tooltip {
+  position: absolute;
+  width: 140px;
+  padding: 0.2rem 0.4rem;
+  background: #fff;
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s;
+  pointer-events: none;
+
+  div {
+    margin: 3px 0;
+  }
+
+  .tooltip-date,
+  .tooltip-count {
+    font-weight: bold;
+  }
+}

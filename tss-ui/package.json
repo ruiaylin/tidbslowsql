@@ -6,7 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "animejs": "^3.1.0",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "d3": "^5.12.0",
     "daterangepicker": "^3.0.5",
     "jquery": "^3.4.1",

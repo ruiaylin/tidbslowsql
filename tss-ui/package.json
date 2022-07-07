@@ -10,7 +10,7 @@
     "d3": "^5.12.0",
     "daterangepicker": "^3.0.5",
     "jquery": "^3.4.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-redux": "^7.1.1",
